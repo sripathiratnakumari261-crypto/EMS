@@ -1,6 +1,7 @@
 package com.codegnan.main;
 
 import java.util.Scanner;
+
 import com.codegnan.service.BankService;
 
 public class BankMangement {
@@ -39,23 +40,19 @@ case 2->{
    String type=sc.next();
    System.out.println("enter balance");
    double balance=sc.nextDouble();
-   obj.createAccount(cus_id, name,type,balance,acc_no);
-   
-   
+   obj.createAccount(cus_id, name,type,balance,acc_no);   
 }
 case 3->{
 	System.out.println("Enter Account Number");
 	int acc_no=sc.nextInt();
 	System.out.println("Enter amount to deposite");
 	double amount=sc.nextDouble();
-	obj.deposit(acc_no,amount);
-
-	
+	obj.deposit(acc_no,amount);	
 }
 case 4->{
 	System.out.println("Enter Account Number");
 	int acc_no=sc.nextInt();
-	System.out.println("Enter amount to deposite");
+	System.out.println("Enter amount to  withdraw");
 	double amount=sc.nextDouble();
 	obj.withdraw(acc_no,amount);
 }
